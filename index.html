@@ -5,22 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    h1{
+        align-items: center;
+        color: rgb(16, 102, 159);
+    }
+    *{
+        background-color: rgb(242, 239, 234);
+        font-family: sans-serif;
+        padding-right: 10px;
+    }
+    input{
+        display: grid;
+        padding: 6px;
+        gap:10px;
+        
+
+    }
+    
+    button{
+        color: rgb(15, 14, 13);
+        background-color: burlywood;
+        align-items: center;
+    }
+</style>
 <body>
-    <input type="email"  id="emailId" placeholder="Enter your mail">
-    <input type="password" id="passWordId" password="Enter your password">
+    <h1> Welcome to fleet-management-app</h1>
+    <h3>Login page</h3>
+    <input  name="Email:" type="email"  id="emailId" placeholder="Enter your mail"><br>
+    <input name="Password:" type="password" id="passWordId" password="Enter your password"><br>
     <button id="btn" onclick="loginDetails()">Login</button>
 
 
     <script>
         function loginDetails(){
-            if (email===admin@gmail.com && password===admin1234){
-                alert("Login success")
+
+            
+            if (email==="admin@gmail.com"){
+                email.alert("Login success")
                 welcome.location.href="admin.html"
             }
             else{
                 alert("Wrong Email or password")
             }
         }
+        loginDetails(emailID)
     </script>
 </body>
 </html>
