@@ -40,18 +40,21 @@
     <script>
     
 
-        document.getElementById("emailId"){
+        function loginDetails(){
+            const email=document.getElementById("emailId").value
+            const passkey=document.getElementById("passWordId").value
 
-            
-            if(emailId.value==="admin@gmail.com" & passWordId.value==="admin1234"){
-                return alert("Login success");
-                return welcome.location.href="admin.html"
+            if(email==="admin@gmail.com " && passkey==="admin1234"){
+                alert("Login Success")
+                window.location.href = "admin.html"
             }
-            else{
+             else{
                 return alert("Wrong Email or password")
             }
         }
-        return check
+
+            
+        
             
         
     </script>
