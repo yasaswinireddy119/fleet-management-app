@@ -3,19 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin Page</title>
+    <style>
+        div{
+            display: inline;
+        }
+    </style>
 </head>
+
 <body>
+    <div>
     <nav>
-        <ul>
-            <li><input type="text">Reg No of Vehicle</li>
-            <select name="category" id="vehicles">
+        
+            <input type="text" placeholder="Reg No of Vehicle"><br><br>
+            Category  : <select name="category" id="vehicles" >
                 <option value="Auto">Auto</option>
                 <option value="Car">Car</option>
                 <option value="Truck">Truck</option>
                 <option value="Bus">Bus</option>
             </select>
-        </ul>
+        <br><br>
+        <input type="text" placeholder="Driver Name"> 
+        <br>
+        <br>
+        <select name="isAvailable" id="aval">
+            <option value="Available">Available</option>
+            <option value="Unavailable">Unavailable
+
+            </option>
+        </select>
     </nav>
+    </div>
 </body>
 </html>
